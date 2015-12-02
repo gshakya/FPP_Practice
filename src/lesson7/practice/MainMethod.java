@@ -1,4 +1,4 @@
-package lesson7;
+package lesson7.practice;
 
 // main method to perform Arithmetic operations
 public class MainMethod {

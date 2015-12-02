@@ -1,4 +1,4 @@
-package lesson7;
+package lesson7.practice;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

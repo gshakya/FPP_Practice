@@ -1,4 +1,4 @@
-package lesson7;
+package lesson7.practice;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
