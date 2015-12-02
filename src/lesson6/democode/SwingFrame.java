@@ -1,4 +1,4 @@
-package lesson7.practice;
+package lesson6.democode;
 import javax.swing.*;
 
 public class SwingFrame 

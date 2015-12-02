@@ -1,5 +1,5 @@
-package lesson7.practice;
-import java.awt.Component;
+package lesson6.democode;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
 public class LoginView3 {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Demo application");
@@ -16,6 +17,7 @@ public class LoginView3 {
 		placeComponents(frame);
 		frame.setVisible(true);
 	}
+
 	private static void placeComponents(JFrame frame) {
 		frame.setLayout(null);
 
@@ -43,28 +45,23 @@ public class LoginView3 {
 		JButton registerButton = new JButton("register");
 		registerButton.setBounds(180, 80, 80, 25);
 		frame.add(registerButton);
-		//Anonymous class
-				registerButton.addActionListener(new ActionListener() {
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						
-						JButton source = (JButton) e.getSource();
-						JOptionPane.showMessageDialog(source, source.getText()
-								+ " button has been pressed");
-					}
-				});
-				
-				loginButton.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent e) {
+		// Anonymous class
+		registerButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
 				JButton source = (JButton) e.getSource();
-				JOptionPane.showMessageDialog(source, source.getText()
-						+ " button has been pressed");
+				JOptionPane.showMessageDialog(source, source.getText() + " button has been pressed");
 			}
 		});
-			
+
+		loginButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JButton source = (JButton) e.getSource();
+				JOptionPane.showMessageDialog(source, source.getText() + " button has been pressed");
+			}
+		});
+
 	}
 
 }
-
-	
-		

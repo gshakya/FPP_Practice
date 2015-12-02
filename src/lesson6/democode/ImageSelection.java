@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lesson7.practice;
+package lesson6.democode;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
